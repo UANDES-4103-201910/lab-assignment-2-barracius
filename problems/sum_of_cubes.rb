@@ -1,3 +1,9 @@
 def sum_of_cubes(a, b)
-	(a..b).inject(0) {|sum,actual| sum += actual**3}
+	sum = 0
+	actual = a
+	while actual <= b
+		sum += actual**3
+		actual += 1
+	end
+	sum
 end
